@@ -1,15 +1,45 @@
 <html>
-    <head>
-      <meta charset="UTF-8">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <title>Sample To-Do List</title>
-    </head>
-    <body>
-      Login
-      <form>
-        <input name="username" type="text" placeholder="username"></input>
-        <input name="password" type="password" placeholder="password"></input>
-        <input type='submit' value="login">
-      </form>
-      <!-- <a href='./signup'>Sign up</a> -->
-    </body>
+        <head>
+          <meta charset="UTF-8">
+          <!-- <srcipt src="main.js"></srcipt> -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <title>Sample To-Do List</title>
+        </head>
+        <body>
+          Login
+          <div id="container">
+          <form id='submitThis' action="/login" method="post">
+            <input id="username" name="username" type="text"></input>
+            <input id="password" name="password" type="password"></input>
+            <button id ='loginButton' type="submit">Login</button>
+          </form>
+        </div>
+          <!-- <a href='./signup'>Sign up</a> -->
+        </body>
+        <script>
+        // $(document).ready(
+
+        // () => {
+        //     $('#loginButton').click(
+        //         function() { 
+        //         console.log('Hello from inside');    
+        //         let addUsername = $('input[id=username]').val();
+        //         let addPassword = $('input[id=password]').val();
+        //         console.log(addUsername, addPassword);
+                    // $.post('/login', {username: addUsername, password: addPassword})
+                    // .done(function(data){
+                    //   // this is for confirmation that data sent
+                    //     console.log('Post successful');
+                    //     console.log('Data loaded', data);
+
+                    // });
+                    // }
+                // )
+        
+            // $('#submitThis').on('submit', (e) => e.preventDefault());
+        // }
+
+            // )
+        </script>
+      
+</html>
